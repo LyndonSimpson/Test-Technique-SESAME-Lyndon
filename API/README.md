@@ -62,10 +62,6 @@ Before running the server, make sure you have [Node.js](https://nodejs.org/) ins
     DB connected
     ```
 
-## License
-
-[INSERT LICENSE HERE]
-
 ## Contact
 
 For any additional questions or comments, please contact [Lyndon](lyndon.simpson1@gmail.com).

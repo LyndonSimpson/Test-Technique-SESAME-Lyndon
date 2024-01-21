@@ -36,10 +36,6 @@ Once the backend is up and running, move to the `front-end` directory. A separat
     - Install dependencies.
     - Launch the frontend application.
 
-## License
-
-[INSERT LICENSE HERE]
-
 ## Contact
 
 Should you encounter any issues or have questions, feel free to reach out at [Lyndon](lyndon.simpson@gmail.com).

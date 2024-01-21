@@ -46,4 +46,4 @@ Should you encounter any issues or have questions, feel free to reach out at [Ly
 
 ---
 
-Thank you for engaging with this technical test project. Your feedback and queries are most welcome!
+Thank you for engaging with this technical test project. Your feedback and queries are most welcome! 

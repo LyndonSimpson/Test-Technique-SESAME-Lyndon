@@ -1,3 +1,10 @@
+
+/**
+ * Validates user input during the signup process.
+ *
+ * @param {Object} userData - email and password provided by the user.
+ * @returns {Object} errors 
+ */
 const validateSignup = ({ email, password }) => {
     const errors = {};
 

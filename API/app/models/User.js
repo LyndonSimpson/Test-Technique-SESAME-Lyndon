@@ -1,5 +1,9 @@
 const mongoose = require('mongoose');
 
+/**
+ * Mongoose schema for a User.
+ * Enforces email uniqueness, format validation, and presence of required fields.
+ */
 const userSchema = new mongoose.Schema({
     email: {
         type: String,

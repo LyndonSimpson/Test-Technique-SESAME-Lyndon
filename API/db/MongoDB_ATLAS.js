@@ -4,6 +4,9 @@ mongoose.connect(process.env.MONGODB_SECRET, {
     serverSelectionTimeoutMS: 30000 
 });
 
+/**
+ * establishes connection to MongoDB ATLAS
+ */
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));

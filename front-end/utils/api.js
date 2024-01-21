@@ -18,6 +18,14 @@ async function loginUser(credentials) {
     }).then((data) => data.json());
 }
 
+/**
+ * Sets the authorization header for active sessions
+ * 
+ * @param {*} url 
+ * @param {*} method GET
+ * @param {*} body 
+ * @returns 
+ */
 async function fetchWithToken(url, method = 'GET', body = null) {
     const token = localStorage.getItem('token');
     const headers = new Headers({

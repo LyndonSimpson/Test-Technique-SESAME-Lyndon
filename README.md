@@ -71,3 +71,10 @@ Client-side validations are implemented to enhance the user experience (UX), not
 
 Separation of concerns is a key principle I adhered to, especially with functionality like API calls and validation logic. These are organized within a utils directory, ensuring that such utilities are easily accessible for reuse and that the codebase remains well-structured and comprehensible.
 
+### difficulties, likes and dislikes
+
+I liked the freedom that was given to make this project, i was able to pick my architecture and start from a clean basis.
+
+I realize that i had the most difficulties setting up the front-end because i have not used REACT or nextJS that much. the aspect in wich i know i can improve is my styling. This time i opted for a pure CSS solution because of how small the project is but it would be good to switch to some commonly used libraries in case of a bigger project, like tailwind CSS. 
+
+Most of the debugging that happened was due to classic errors when setting up JWT headers and with eror connecting to mongoDB. Reading the error message details oriented me towards the source of the problem each time. there were a few times where i placed some console.log to check if a variable was receiving the info it should correctly.

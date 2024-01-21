@@ -58,6 +58,8 @@ I refactored and abstracted logic wherever feasible to ensure that the applicati
 
 MongoDB Atlas was selected as the database solution due to its cloud-based nature, which offers adaptability and scalability. Such a choice ensures that as the application grows, the database can be scaled accordingly to meet increased demand and data complexity. more models can be created if necessary.
 
+Since the project is a demo and doesn't require CSURF protection unless deployed on the web, i saw no need to implement it here, but it is the next feature to be added if the project is upgraded.
+
 
 ### Front-end
 

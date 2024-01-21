@@ -7,7 +7,12 @@ const session = require('express-session');
 //const csurf = require('csurf');
 
 module.exports = (app) => {
-    app.use(cors());
+    const corsOptions = {
+        origin: 'http://localhost:3001', //only the frontend port origin to access
+        optionsSuccessStatus: 200 
+    };
+
+    app.use(cors(corsOptions));
 
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(bodyParser.json());
@@ -21,7 +26,6 @@ module.exports = (app) => {
         cookie: { secure: true }
     }));
 
-    // Setup CSRF protection
     //app.use(csurf({ cookie: true }));
 
     //add other middlewares or configurations you need

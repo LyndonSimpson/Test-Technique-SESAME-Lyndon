@@ -38,7 +38,7 @@ Once the backend is up and running, move to the `front-end` directory. A separat
 
 ## Contact
 
-Should you encounter any issues or have questions, feel free to reach out at [Lyndon](lyndon.simpson@gmail.com).
+Should you encounter any issues or have questions, feel free to reach out at [Lyndon]([lyndon.simpson@gmail.com](https://lyndonsimpson.github.io/CV_Lyndon.simpson/)).
 
 ---
 

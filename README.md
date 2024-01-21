@@ -43,3 +43,21 @@ Should you encounter any issues or have questions, feel free to reach out at [Ly
 ---
 
 Thank you for engaging with this technical test project. Your feedback and queries are most welcome! 
+
+## Choice of Architecture and libraries
+
+### API 
+
+For the backend architecture, I implemented the MVC (Model-View-Controller) pattern, augmented by a DataMapper layer. The DataMapper is responsible for interacting with the MongoDB Atlas cluster, thereby abstracting database communications. Controllers handle the incoming requests and outgoing responses, encapsulating the business logic of the application. Centralizing all route methods in the router allows it to efficiently manage the three essential routes: signup, login, and articles retrieval.
+
+JWT (JSON Web Token) authentication logic has been encapsulated within middleware to ensure a clean separation of concerns and to facilitate token verification across different routes.
+
+Express application configurations have been organized in a dedicated file separate from index.js to modularize the setup and provide a clear distinction between server initialization and configuration settings.
+
+I refactored and abstracted logic wherever feasible to ensure that the application remains simple yet highly scalable. This approach guarantees that the application infrastructure can support the expansion of features and database schema modifications without significant refactoring.
+
+MongoDB Atlas was selected as the database solution due to its cloud-based nature, which offers adaptability and scalability. Such a choice ensures that as the application grows, the database can be scaled accordingly to meet increased demand and data complexity. more models can be created if necessary.
+
+
+### Front-end
+

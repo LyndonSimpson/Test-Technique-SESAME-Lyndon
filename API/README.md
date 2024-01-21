@@ -64,7 +64,7 @@ Before running the server, make sure you have [Node.js](https://nodejs.org/) ins
 
 ## Contact
 
-For any additional questions or comments, please contact [Lyndon]([lyndon.simpson1@gmail.com](https://lyndonsimpson.github.io/CV_Lyndon.simpson/)).
+For any additional questions or comments, please contact [Lyndon](https://lyndonsimpson.github.io/CV_Lyndon.simpson/).
 
 ---
 

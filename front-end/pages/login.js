@@ -13,15 +13,21 @@ export default function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const data = await loginUser({ email, password });
+        try {
+          const data = await loginUser({ email, password });
 
-        if (data && data.token) {
-            localStorage.setItem('token', data.token); // Store the token
-            router.push('/articles'); //redirect to articles page
-        } else {
-            console.error('Login failed:', data.message);
-        }
-    };
+          if (data && data.token) {
+              localStorage.setItem('token', data.token); // Store the token
+              router.push('/articles'); //redirect to articles page
+          } else {
+              console.error('Login failed:', data.message);
+              alert('Mail or password invalid.'); // Display a simple alert to the user
+          }
+      } catch (error) {
+          console.error('Error during login:', error);
+          alert('Invalid mail or password.'); // Display a simple alert to the user
+      }
+  };
 
     return (
         <div className="container">

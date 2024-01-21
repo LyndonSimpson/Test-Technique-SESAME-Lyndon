@@ -1,18 +1,75 @@
-Readme backend
+# Backend API for Web App
 
-This directory is the back-end for the web app. It connects to mongoDB ATLAS (cloud service) to store user account information (create and read for mail and password). It also retrieves articles accessible only to a connected user from builder.io. All this logic is run through a router containing all 3 routes : create a new user, login as a registered user, retrieve articles from builder.io.
+## Introduction
 
-The API is simple but the structure was thought out as to accomodate more logic in the case of expansion.
+This repository contains the backend API for a web application. The API is designed with a simple yet expandable structure, connecting to MongoDB Atlas for storing user credentials and interfacing with Builder.io to retrieve articles for authenticated users.
 
-The server uses express.
+## Features
 
-For security, passwords are hashed using bcrypt, and it is only the hashed password that is stored in the mongoDB ATLAS cluster. 
+- **User Authentication**: Handles creating new user accounts and logging in with email and password.
+- **Content Retrieval**: Fetches articles from Builder.io accessible only to connected users.
+- **Security**: Utilizes bcrypt for hashing passwords before storing them in the MongoDB Atlas cluster.
+- **Session Management**: Implements JWT for secure token storage on the client side.
 
-For secure sessions, a token is stored in the localstorage on the client side using JWT.
+## Technologies
 
+- **Express.js**: The server framework for handling HTTP requests.
+- **MongoDB Atlas**: Cloud database service used for storing user data.
+- **Bcrypt**: For password hashing.
+- **JSON Web Token (JWT)**: For managing user sessions.
 
-First, you need to install dependencies from package.json using "npm install" in 'API' directory. 
+## Getting Started
 
-Create a .env file in the API directory. This .env file will need to have all the credentials shown in the example file .env.example. 
+### Prerequisites
 
-When all dependencies are installed sucessfully and the ".env" file is setup with the actual credentials, you can launch the server running 'node dev index.js' from the API directory. If the server is correctly launched it will show "listening on port 3000" in the console and if it connects sucessfully to mongoDB ATLAS cluster the console will show "DB connected".
+Before running the server, make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. Clone the repository to your local machine.
+2. Navigate to the 'API' directory.
+3. Install the necessary dependencies:
+
+    ```shell
+    npm install
+    ```
+
+4. Create a `.env` file in the API directory. Use the `.env.example` as a template to add your credentials:
+
+    ```shell
+    cp .env.example .env
+    ```
+
+5. Fill in the `.env` file with your actual credentials for MongoDB Atlas and other services.
+
+### Running the Server
+
+1. Start the server with the following command:
+
+    ```shell
+    node dev index.js
+    ```
+
+2. Upon successful launch, the console will display:
+
+    ```
+    listening on port 3000
+    ```
+
+3. Once connected to the MongoDB Atlas cluster, the console will confirm:
+
+    ```
+    DB connected
+    ```
+
+## License
+
+[INSERT LICENSE HERE]
+
+## Contact
+
+For any additional questions or comments, please contact [Lyndon](lyndon.simpson1@gmail.com).
+
+---
+
+Thank you for using our backend API!

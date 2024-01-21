@@ -6,6 +6,23 @@ const signUp = async (req, res) => {
     try {
         const { email, password } = req.body;
         
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email || !emailRegex.test(email)) {
+            return res.status(400).json({ message: "Please enter a valid email address." });
+        }
+
+        const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+        if (!password || !passwordRegex.test(password)) {
+            return res.status(400).json({
+                message: "Password must be at least 8 characters long and include numbers, uppercase and lowercase letters, and special characters."
+            });
+        }
+
+        const existingUser = await userDataMapper.getUserByEmail(email);
+        if (existingUser) {
+            return res.status(409).json({ message: "User already exists" });
+        }
+        
         if (!email || !password) {
             return res.status(400).send('Email and password are required');
         }

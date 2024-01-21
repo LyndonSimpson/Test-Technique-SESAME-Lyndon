@@ -61,3 +61,11 @@ MongoDB Atlas was selected as the database solution due to its cloud-based natur
 
 ### Front-end
 
+For the front-end i decided to use components for the header and the footer as they are reused accross all 3 pages of the web app. Such a modular design simplifies updates and maintenance; changes made to either the header or footer are universally propagated, enhancing code maintainability and efficiency.
+
+Instead of integrating a specific style library, I opted for pure CSS to fulfill the styling requirements of the project. This decision was made to keep the application lightweight and to avoid unnecessary complexity, considering that the project's design needs were adequately met with vanilla CSS.
+
+Client-side validations are implemented to enhance the user experience (UX), not as a security measure. For example, verifying the format of an email address is done on the client side, providing immediate feedback to the user and reducing server-side load for such trivial checks.
+
+Separation of concerns is a key principle I adhered to, especially with functionality like API calls and validation logic. These are organized within a utils directory, ensuring that such utilities are easily accessible for reuse and that the codebase remains well-structured and comprehensible.
+

@@ -2,21 +2,27 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies from package.json using 'npm install'
+
+For this nextJS app to run you'll need at least nodeJS version 18.17.0. If you aren't sure what version you have, you can check by running 'node -v'. if you have an older version, please visit the nodeJS website to download the correct version. 
+
+Then, run the development server (IMPORTANT : run the server on port 3001):
 
 ```bash
-npm run dev
+npm run dev -- -p 3001
 # or
-yarn dev
+yarn dev...
 # or
-pnpm dev
+pnpm dev...
 # or
-bun dev
+bun dev...
 ```
+It is essential that the front-end nextJS app be launched on port 3001 as port 3000 is the back-end. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Open [http://localhost:3001/login](http://localhost:3001/login) with your browser to see the result. 
+
+The `app/page.js`. will show up as default, please visit 'http://localhost:3001/login'
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 

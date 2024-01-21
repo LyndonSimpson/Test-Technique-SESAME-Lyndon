@@ -1,0 +1,59 @@
+.articlesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #f5f5f5; /* Light grey background for contrast */
+  }
+  
+  .articlesList {
+    list-style: none;
+    padding: 0;
+    width: 100%; /* Full width */
+    max-width: var(--max-width); /* Max width from your variables */
+  }
+  
+  .articleItem {
+    background: white;
+    border: 1px solid #ddd; /* Light border for the list items */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: var(--border-radius); /* Use your border-radius variable */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .articleItem:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .articleTitle {
+    color: #0056b3;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  
+  .articleDescription {
+    color: #333;
+  }
+  
+  .articleImage {
+    width: 100%;
+    max-height: 300px; 
+    object-fit: cover; 
+    border-radius: var(--border-radius); 
+  }
+  
+  .logOffButton {
+    background-color: #0070f3; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--border-radius); 
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .logOffButton:hover {
+    background-color: #0056b3; 
+  }

@@ -9,7 +9,7 @@ const router = Router();
  * POST /user/signup
  * Route for user registration. 
  * Accepts email and password, validates them, and creates a new user record.
- * @param {express.Request} req - The request object, containing email and password in the body.
+ * @param {express.Request} req - The request object, containing email in the body.
  * @param {express.Response} res - The response object.
  */
 router.post("/user/signin", userController.signUp);
@@ -18,7 +18,7 @@ router.post("/user/signin", userController.signUp);
  * POST /user/login
  * Route for user login
  * Accepts email ad password, creates a new session.
- * @param {express.Request} req - The request object, containing email and password in the body.
+ * @param {express.Request} req - The request object, containing email in the body.
  * @param {express.Response} res - The response object.
  */
 router.post("/user/login", userController.login);

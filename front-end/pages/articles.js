@@ -32,20 +32,20 @@ export default function Articles() {
     <div>
       <Navbar />
       <main className={styles.articlesContainer}>
+      <button onClick={handleLogoff} className={styles.logOffButton}>Log Off</button>
         <h1>Articles</h1>
         {isLoading ? (
           <p>Loading...</p>
         ) : (
           <div>
-            <button onClick={handleLogoff} className={styles.logOffButton}>Log Off</button>
             <ul className={styles.articlesList}>
-              {articles.map((article) => (
-                <li key={article.id} className={styles.articleItem}>
-                  <h2 className={styles.articleTitle}>{article.title}</h2>
+            {articles.map((article) => (
+              <li key={article.id} className={styles.articleItem}>
+                <h2 className={styles.articleTitle}>{article.title}</h2>
+              <img src={article.image} alt={article.title} className={styles.articleImage} />
                   <p className={styles.articleDescription}>{article.description}</p>
-                  <img src={article.image} alt={article.title} className={styles.articleImage} />
-                </li>
-              ))}
+              </li>
+))}
             </ul>
           </div>
         )}

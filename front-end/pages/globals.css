@@ -112,6 +112,7 @@
   html, body {
     height: 100%;
     margin: 0;
+    background-image: url('../public/images/Backgroun2.png');
   }
   
   #__next {

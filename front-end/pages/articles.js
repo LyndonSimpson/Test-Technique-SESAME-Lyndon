@@ -45,7 +45,7 @@ export default function Articles() {
               <img src={article.image} alt={article.title} className={styles.articleImage} />
                   <p className={styles.articleDescription}>{article.description}</p>
               </li>
-))}
+            ))}
             </ul>
           </div>
         )}
